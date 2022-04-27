@@ -1,0 +1,7 @@
+rng default
+Y=tsne(nmaparametervalues);
+gscatter(Y(:,1),Y(:,2),nmaclasses)
+%hold on
+
+% mean and median values were extracted from the data statistics tool of the figure obtained as above
+
