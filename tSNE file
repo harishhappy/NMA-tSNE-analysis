@@ -1,7 +1,15 @@
 rng default
 Y=tsne(nmaparametervalues);
 gscatter(Y(:,1),Y(:,2),nmaclasses)
-%hold on
+hold on
 
-% mean and median values were extracted from the data statistics tool of the figure obtained as above
+%calculate x and y mean and standard deviation for each nma class using the
+%data statistics tool of the plot
+
+%plot ellipses for each class using the [x,y] mean as the center and the x
+%and y standard deviation as the diameters along respective axis [x,y] using
+%plotEllipses function.
+%e.g. plotEllipses([xmean_ras,ymean_ras],[xstd_ras,ystd_ras],color code)
+
+%Source for plotEllipses function: https://in.mathworks.com/matlabcentral/answers/476867-how-can-i-draw-std-ellipses-in-a-scatter-plot
 
